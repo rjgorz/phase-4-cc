@@ -78,7 +78,7 @@ class RestaurantPizzas(Resource):
             )
 
             db.session.add(new_restaurantPizza)
-            db.session.commit()
+            db.session.commit()            
 
             return make_response(
                 new_restaurantPizza.pizza.to_dict(),
